@@ -36,6 +36,6 @@ public class Caesar {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(encrypt("javaTpoint", 3));
+		System.out.println(encrypt("Hanoi", 3));
 	}
 }
