@@ -37,5 +37,8 @@ public class Caesar {
 	
 	public static void main(String[] args) {
 		System.out.println(encrypt("Hanoi", 3));
+		String mahoa = encrypt("Hanoi", 3);
+		System.out.println(mahoa);
+		System.out.println(decrypt(mahoa,3));
 	}
 }

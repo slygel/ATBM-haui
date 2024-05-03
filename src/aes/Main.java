@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String[] args) 
 	 { 
 	     // Create String variables 
-	     String originalString = "GeeksforGeeks"; 
+	     String originalString = "GeeksforGeekssssshell"; 
 	     
 	     // Call encryption method 
 	     String encryptedString 
