@@ -29,6 +29,9 @@ public class Caesar {
 		for(int i=0; i<input.length(); i++) {
 			 pos=chu.indexOf(input.charAt(i));
 			 char encryptChar=chu.charAt((pos-key)%26);
+			 if(encryptChar < 0) {
+				 encryptChar += 26;
+			 }
 			 encryptStr+=encryptChar;
 			
 		}
@@ -36,9 +39,15 @@ public class Caesar {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(encrypt("Hanoi", 3));
-		String mahoa = encrypt("Hanoi", 3);
-		System.out.println(mahoa);
-		System.out.println(decrypt(mahoa,3));
+		String plaintext = "hello";
+        int key = 3;
+        
+        // Mã hóa
+        String encryptedText = encrypt(plaintext, key);
+        System.out.println("Encrypted text: " + encryptedText);
+        
+        // Giải mã
+        String decryptedText = decrypt(encryptedText, key);
+        System.out.println("Decrypted text: " + decryptedText);
 	}
 }

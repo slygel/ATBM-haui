@@ -104,9 +104,9 @@ public class HillCipher {
     }
     
     public static void main(String[] args) {
-        int[][] key = {{3, 2}, {5, 7}}; // Ma trận khóa
+        int[][] key = {{4, 5}, {3, 5}}; // Ma trận khóa
         
-        String plainText = "HELLOAE"; // Văn bản gốc
+        String plainText = "HELP"; // Văn bản gốc
         
         // Mã hóa văn bản
         String encryptedText = encrypt(plainText, key);

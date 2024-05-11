@@ -18,4 +18,23 @@ public class Modulo {
 		}
 		return result;
 	}
+	
+	// Phương thức tính lũy thừa modulo (a^b mod m)
+    public static int modPow(int base, int exponent, int modulus) {
+        if (modulus == 1) return 0;
+        int result = 1;
+        base = base % modulus;
+        while (exponent > 0) {
+            if (exponent % 2 == 1)
+                result = (result * base) % modulus;
+            exponent = exponent >> 1;
+            base = (base * base) % modulus;
+        }
+        return result;
+    }
+    
+    public static void main (String[] args) {
+    	System.out.print(modPow(5, 58, 97));
+//    	System.out.print(binaryExponentiation(3, 2, 2));
+    }
 }

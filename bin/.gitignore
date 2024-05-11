@@ -1,7 +1,3 @@
-/des/
-/aes/
-/caesar/
-/diffieHellman/
 /hillCipher/
+/des/
 /rsa/
-/elgamal/

@@ -3,7 +3,7 @@ package elgamal;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-public class ElGamalEncryption {
+public class ElGamal {
 	private static final int BIT_LENGTH = 1024;
 
     public static void main(String[] args) {
