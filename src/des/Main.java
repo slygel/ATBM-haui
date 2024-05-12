@@ -5,7 +5,7 @@ public class Main {
         try {
             // Khóa và văn bản ban đầu
             String key = "133457799BBCDFF1";
-            StringBuilder plaintext = new StringBuilder("DBB");
+            StringBuilder plaintext = new StringBuilder("B");
 
             // Mã hóa
             DesAlgorithm desEncryptor = new DesAlgorithm(plaintext, key);

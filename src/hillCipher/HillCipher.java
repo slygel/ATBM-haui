@@ -106,6 +106,18 @@ public class HillCipher {
     public static void main(String[] args) {
         int[][] key = {{4, 5}, {3, 5}}; // Ma trận khóa
         
+     // Tìm ma trận nghịch đảo của khóa
+        int[][] inverseKey = getInverseKey(key);
+
+        // In ra ma trận nghịch đảo
+        System.out.println("Inverse Key:");
+        for (int i = 0; i < inverseKey.length; i++) {
+            for (int j = 0; j < inverseKey[i].length; j++) {
+                System.out.print(inverseKey[i][j] + " ");
+            }
+            System.out.println();
+        }
+        
         String plainText = "HELP"; // Văn bản gốc
         
         // Mã hóa văn bản

@@ -33,7 +33,7 @@ public class RSA {
         System.out.println("Ma hoa bí mật (n,d): " + "("+n+","+d+")");
     
         // Thử nghiệm mã hóa và giải mã
-        String originalText = "Hello, RSA!";
+        String originalText = "HELLO, RSA!";
         System.out.println("Original Text: " + originalText);
 
         int[] ciphertext = encrypt(originalText, e, n);
