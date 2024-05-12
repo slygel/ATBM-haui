@@ -33,7 +33,7 @@ public class HillCipher {
                 int sum = 0;
                 for (int k = 0; k < n; k++) {
                 	if (k < segmentNums.length) { // Kiểm tra chỉ mục hợp lệ trong mảng segmentNums
-                        sum += key[j][k] * segmentNums[k];
+                        sum += key[k][j] * segmentNums[k];
                     }
                 }
                 encryptedText.append(numToChar(sum % 26)); // 26 là số ký tự trong bảng mã
@@ -65,7 +65,7 @@ public class HillCipher {
             for (int j = 0; j < n; j++) {
                 int sum = 0;
                 for (int k = 0; k < n; k++) {
-                    sum += inverseKey[j][k] * segmentNums[k];
+                    sum += inverseKey[k][j] * segmentNums[k];
                 }
                 decryptedText.append(numToChar(Math.floorMod(sum, 26))); // 26 là số ký tự trong bảng mã
             }
@@ -104,7 +104,10 @@ public class HillCipher {
     }
     
     public static void main(String[] args) {
-        int[][] key = {{4, 5}, {3, 5}}; // Ma trận khóa
+        int[][] key = {
+        		{3, 3}, 
+        		{2, 5}
+        }; // Ma trận khóa
         
      // Tìm ma trận nghịch đảo của khóa
         int[][] inverseKey = getInverseKey(key);

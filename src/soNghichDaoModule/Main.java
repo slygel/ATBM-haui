@@ -1,4 +1,4 @@
-package soNghichDao;
+package soNghichDaoModule;
 
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ public class Main {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		// 550^-1 mod 1759
 		System.out.print("ket qua: "+NghichDao(550, 1759));
 	}
 
